@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="Exam_UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Exam_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:ConnectionId='2'                     >
+        <CommandBar>
+            <AppBarButton x:ConnectionId='4' Icon="Add"                     ></AppBarButton>
+            <AppBarButton x:ConnectionId='5' Icon="View"                      ></AppBarButton>
+        </CommandBar>
+        <Frame x:ConnectionId='3' x:Name="MainFrame"/>
+    </Grid>
+</Page>
+

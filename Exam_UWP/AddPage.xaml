@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="Exam_UWP.AddPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Exam_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="File Name: " FontSize="36"/>
+            <TextBox x:Name="fileName" Text="" Height="50" Width="300" Margin="30,0,30,0"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0, 50,0,50">
+            <TextBlock Text="Content: " FontSize="36"/>
+            <TextBox x:Name="fileContent" Text="" Height="300" Width="300" Margin="60,0,30,0"/>
+        </StackPanel>
+        <Button Content="Save File" Width="200" Height="50" Margin="190,0,0,0" Click="saveBtn_Click"></Button>
+    </StackPanel>
+</Page>
